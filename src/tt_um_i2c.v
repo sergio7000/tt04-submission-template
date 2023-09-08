@@ -21,6 +21,7 @@ module tt_um_i2c (
     wire [5:0]data_from_master;
     assign rst=~rst_n; 
     assign uo_out[7:6] =2'b00;
+    assign uio_out[7:6] =2'b00;
 	assign uio_oe[7:2]=6'b111111;
 	assign uio_oe[1]=1'b0;
 
