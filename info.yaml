@@ -52,18 +52,18 @@ documentation:
     - data_from_master[3]
     - data_from_master[4]
     - data_from_master[5]
-    - none
+    - ctrl
     - none
 # A description of what the bidirectional I/O pins do (e.g. I2C SDA, I2C SCL, etc)
   bidirectional:
     - sda_in
     - sda_out
-    - none
-    - none
-    - none
-    - none
-    - none
-    - none
+    - data_to_master[0]
+    - data_to_master[1]
+    - data_to_master[2]
+    - data_to_master[3]
+    - data_to_master[4]
+    - data_to_master[5]
 
 # The following fields are optional
   tag:          ""      # comma separated list of tags: test, encryption, experiment, clock, animation, utility, industrial, pwm, fpga, alu, microprocessor, risc, riscv, sensor, signal generator, fft, filter, music, bcd, sound, serial, timer, random number generator, calculator, decoder, counter, puzzle, multiplier, game, oscillator,
