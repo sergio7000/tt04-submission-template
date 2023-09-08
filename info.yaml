@@ -21,9 +21,9 @@ yaml_version: 4
 #
 # Here is a great example: https://github.com/davidsiaw/tt02-davidsiaw-stackcalc/blob/38c5647f83aad2aec675d566aa3d67b98f0aac81/info.yaml
 documentation: 
-  author:       ""      # Your name
-  title:        ""      # Project title
-  language:     "Wokwi" # other examples include Verilog, Amaranth, VHDL, etc
+  author:       "Sergio Alejandro Rosales Nuñez"      # Your name
+  title:        "i2c_6 bits"      # Project title
+  language:     "Verilog" # other examples include Verilog, Amaranth, VHDL, etc
   description:  ""      # Short description of what your project does
 
 # Longer description of how the project works. You can use standard markdown format.
@@ -36,9 +36,9 @@ documentation:
 
 # A description of what the inputs do (e.g. red button, SPI CLK, SPI MOSI, etc).
   inputs:               
-    - none
-    - none
-    - none
+    - clk
+    - rst
+    - scl
     - none
     - none
     - none
@@ -46,18 +46,18 @@ documentation:
     - none
 # A description of what the outputs do (e.g. status LED, SPI MISO, etc)
   outputs:
-    - segment a
-    - segment b
-    - segment c
-    - segment d
-    - segment e
-    - segment f
-    - segment g
-    - dot
+    - data_from_master[0]
+    - data_from_master[1]
+    - data_from_master[2]
+    - data_from_master[3]
+    - data_from_master[4]
+    - data_from_master[5]
+    - none
+    - none
 # A description of what the bidirectional I/O pins do (e.g. I2C SDA, I2C SCL, etc)
   bidirectional:
-    - none
-    - none
+    - sda_in
+    - sda_out
     - none
     - none
     - none
