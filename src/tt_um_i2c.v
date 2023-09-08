@@ -27,8 +27,7 @@ module tt_um_i2c (
 assign uo_out[5:0]=data_from_master; 
 assign uio_out[5:0]=data_from_master;
 
- I2C_slave_latin #(.bits(6), .MINION_ADDR(4'b0010)) i2c1(.scl(uio_in[1]),.sda_in(uio_in[0]),.sda_out(uio_out[0]),.ctrl(uio_oe[0]),
-.clk(clk),.rst(rst),.data_to_master(uio_in[7:2]),.data_from_master(data_from_master);
+ I2C_slave_latin #(.bits(6), .MINION_ADDR(4'b0010)) i2c1(.scl(uio_in[1]),.sda_in(uio_in[0]),.sda_out(uio_out[0]),.ctrl(uio_oe[0]),.clk(clk),.rst(rst),.data_to_master(uio_in[7:2]),.data_from_master(data_from_master));
 
   
 
